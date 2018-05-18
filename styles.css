@@ -1,0 +1,158 @@
+a {
+    color: #004ed8;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+body {
+    font-size: 20px;
+    font-family: 'Raleway';
+    line-height: 1.6;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+section {
+    padding: 60px 30px;
+}
+
+header section {
+    text-align: center;
+}
+
+header section .profile-picture {
+    display: block;
+    margin: 0 auto 40px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+main section {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+
+main section a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+main section a:hover {
+    text-decoration: none;
+}
+
+main section svg {
+    width: 4em;
+    fill: #fff;
+    margin-bottom: 30px;
+}
+
+.linkedin {
+    background-color: #0077b5;
+}
+
+.instagram {
+    background-color: #cd486b;
+}
+
+.twitter {
+    background-color: #00aced;
+}
+
+.facebook {
+    background-color: #3b5998;
+}
+
+.gmail {
+    background-color: #db3236;
+}
+
+footer {
+    background-color: #262b2f;
+    color: #fff;
+    font-size: 16px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    text-decoration: none;
+}
+
+footer section {
+    text-align: center;
+}
+
+.love {
+    color: red;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    main {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    main section {
+        flex-grow: 1;
+        flex-basis: 360px;
+    }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    /*main, footer {
+        width: 1200px;
+        margin: 0 auto;
+    }*/
+    body {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    header {
+        flex-grow: 1;
+        flex-basis: 40%;
+    }
+
+    header section {
+        padding-top: 100px;
+    }
+
+    main {
+        flex-grow: 1;
+        flex-basis: 60%;
+    }
+
+    main section {
+        flex-basis: 320px;
+    }
+
+    footer {
+        flex-basis: 100%;
+    }
+}
+
+/* Extra large devices (extra large desktops, 2000px and up) */
+@media (min-width: 2000px) {
+    main section {
+        flex-basis: 360px;
+    }
+}
